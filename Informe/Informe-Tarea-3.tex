@@ -73,7 +73,7 @@
 	Se espera que usted:
 
 	\begin{enumerate}
-		\item Haga un análisis de los tipos de datos que posee (ordinales, categóricos, cuantitativos, etc) y sus relaciones.
+		\item ** DONE: Haga un análisis de los tipos de datos que posee (ordinales, categóricos, cuantitativos, etc) y sus relaciones. **
 		\item Plantee las preguntas que desea su visualización responda.
 		\item Haga un mapeo de sus datos a los distintos gráficos que servirán para responder 2.
 		\item Diseñe (usando lápiz/papel, paint, d3, tableau, lo que le sea más fácil) el layout de su visualización, textos de apoyo, y su paleta de colores,
@@ -87,19 +87,53 @@
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 	\section{Análisis}
-	% TODO Análisis
 
-	TODO
+	Existen 10 columnas de datos en total:
+
+	\begin{itemize}
+		\item Nombre: Aleatorio
+		\item Id: Ordinal
+		\item Tipo: Categórico
+		\item Clase: Categórico
+		\item Masa: Ordinal
+
+		\item Caído/Encontrado: Categórico
+		\item Año: Ordinal
+		\item Latitud: Ordinal
+		\item Longitud: Ordinal
+		\item Geolocalización: Ordinal (Tupla)
+	\end{itemize}
+
+	Nuestros datos se relacionan de la siguiente manera:
+
+	\begin{itemize}
+		\item Tamaño y tipo del meteorito: Cada tipo de meteorito depende de su tamaño.
+		\item Cantidad de meteoritos y año encontrado: Entre más reciente, mayor es la cantidad de meteoritos encontrados.
+		\item Tamaño de los meteoritos y geolocalización: Se encuentra mayor cantidad de meteoritos pequeños en los polos.
+		\item Nombre propio y tamaño del meteorito: Los meteoritos de tamaño no-despreciable tienen nombre propio (Ej.: Alessandria) v/s los más pequeños (Ej.: Yamato 983824)
+	\end{itemize}
+
+	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+	\newpage
+	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 	\section{Planteamiento de preguntas}
 	% TODO Planteamiento de preguntas
 
 	TODO
 
+	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+	\newpage
+	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
 	\section{Mapeo datos a gráficos}
 	% TODO Mapeo datos -> gráficos
 
 	TODO
+
+	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+	\newpage
+	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 	\section{Diseño}
 	% TODO Diseño
