@@ -7,6 +7,7 @@
 \usepackage{bmpsize,wrapfig,xcolor}
 \usepackage{fullpage}
 \usepackage[hidelinks]{hyperref}
+\usepackage{subcaption}
 
 % Para evitar que se indente solo a cada rato
 \setlength\parindent{0pt}
@@ -40,7 +41,7 @@
 			\end{large}
 
 		\end{center}
-
+--
 		\vfill
 
 		\begin{flushright}
@@ -88,6 +89,8 @@
 
 	\section{Análisis}
 
+	\subsection{Tipo de datos}
+
 	Existen 10 columnas de datos en total:
 
 	\begin{itemize}
@@ -103,6 +106,8 @@
 		\item Longitud: Ordinal
 		\item Geolocalización: Ordinal (Tupla)
 	\end{itemize}
+
+	\subsection{Relaciones entre datos}
 
 	Nuestros datos se relacionan de la siguiente manera:
 
@@ -141,7 +146,8 @@
 	Como relacionar los datos para responder las preguntas anteriores:
 
 	\begin{enumerate}
-		\item Basta mapear los datos (geolocalización) en un mapa mundial, agregando un filtro en función del peso y usando distintos colores para cada segmento.
+		\item Basta mapear los datos (geolocalización) en varios mapas mundiales separados por segmentos de peso, cuadricular cada mapa y mostrar con distintos colores según densidad
+		de meteoritos por cada cuadro.
 		\item En un gráfico de barra, por cada tipo contar sus apariciones.
 		\item En un gráfico de barra, tomando solo un segmento de los datos en función del peso.
 
@@ -161,7 +167,36 @@
 	\section{Diseño}
 	% TODO Diseño
 
-	TODO
+	\subsection{Mapa Mundial}
+
+	Se eligió un mapa mundial, dado que las preguntas de ubicación geográfica se responden mucho más fácilmente así, en lugar de usar un gráfico de barras o de líneas.
+
+	En particular, se decidió usar un mapa mundial mudo para poder aprovechar el procesamiento \textit{pre-attentive} de las personas, distinguiendo por color los datos y sacando del
+	foco al mar, donde no hay información para mostrar.
+
+	Para los datos de geolocalización, se eligió una paleta de colores entre los colores rojo y azul, puesto que son intuitivos para los gradientes (azul es menos, rojo es más).
+
+	Por último, usando la Ley de la Experiencia (Gestalt), un mapa mundial está presente en las mentes de las personas, por lo que es posible identificar lugares con más/menos meteoritos
+	sin tener que detenerse a pensar dónde cayeron en la realidad.
+
+	\subsubsection{Distribución de meteoritos en el mundo}
+
+	Para este caso, el mapa mundial será dividido en cuadrículas, de forma de poder mostrar genéricamente en que sectores hay una mayor cantidad de meteoritos.
+
+	\subsubsection{Conteo de meteoritos por país}
+
+	Para este caso, el mapa mundial será dividido por países, de forma de poder mostrar los meteoritos caídos por cada nación.
+
+	\begin{tabular}{cc}
+		\includegraphics[width=0.5\textwidth]{mapamundiQuad.png} & \includegraphics[width=0.5\textwidth]{mapamundiPol.png}\\
+		(a) Cuadriculado & (b) Por país\\
+	\end{tabular}
+
+	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+	\newpage
+	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+	\subsection{Gráfico de barras}
 
 	% 	Paleta de colores: http://paletton.com/#uid=50K0D0kS-C8tqT2FFTwQPquQols
 
