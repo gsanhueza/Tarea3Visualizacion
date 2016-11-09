@@ -1,2 +1,5 @@
-# Tarea3Visualizacion
-Tarea 3 de Visualización
+# Tarea 3 Visualizacion
+
+![IMG1](Informe/mapamundiQuad.png)
+
+![IMG2](Informe/mapamundiPol.png)
