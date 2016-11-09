@@ -50,6 +50,7 @@
 						&:	& Gabriel Sanhueza\\
 				Profesor	&:	& Javier Bustos\\
 				Ayudante	&:	& Diego Madariaga\\
+				Repositorio GitHub &:	& \url{https://github.com/gsanhueza/Tarea3Visualizacion}\\
 			\end{tabular}
 		\end{flushright}
 
@@ -60,28 +61,6 @@
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
 	\tableofcontents
-
-	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-	\newpage
-	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
-
-	\begin{large}
-		{\textbf{BORRAR ESTO}}
-	\end{large}
-
-	En esta tarea debe enviar el diseño del layout para los datos de su proyecto. Es la última oportunidad que tiene para cambiar su dataset.
-
-	Se espera que usted:
-
-	\begin{enumerate}
-		\item ** DONE: Haga un análisis de los tipos de datos que posee (ordinales, categóricos, cuantitativos, etc) y sus relaciones. **
-		\item Plantee las preguntas que desea su visualización responda.
-		\item Haga un mapeo de sus datos a los distintos gráficos que servirán para responder 2.
-		\item Diseñe (usando lápiz/papel, paint, d3, tableau, lo que le sea más fácil) el layout de su visualización, textos de apoyo, y su paleta de colores,
-		justificando sus decisiones de diseño desde el punto de vista cognitivo y con los fundamentos de información visual.
-	\end{enumerate}
-
-	Recuerde que hoy en clases se informó que sus datos y visualizaciones deben quedar en un repositorio de GitHub. Si usted no tiene uno propio debe avisarle al profesor para que le cree un repositorio.
 
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 	\newpage
@@ -151,11 +130,11 @@
 		\item En un gráfico de barra, por cada tipo contar sus apariciones.
 		\item En un gráfico de barra, tomando solo un segmento de los datos en función del peso.
 
-		\item En un grafico de barra, ordenar los meteoritos en función del peso y contar sus ocurrencias.
+		\item En un scatterplot, ordenar los meteoritos en función del peso y contar sus ocurrencias.
 		\item Se usa gráfico anterior.
 		\item Se usa gráfico anterior.
 
-		\item En un grafico de barra, contar apariciones de meteoritos en función del año.
+		\item En un scatterplot, contar apariciones de meteoritos en función del año.
 		\item Dado un mapa mundial, utilizar un gradiente de color en función del número de meteoritos caídos por país.
 		\item Dado un mapa mundial, utilizar un gradiente de color en función del número de meteoritos caídos por tipo.
 	\end{enumerate}
@@ -196,7 +175,31 @@
 	\newpage
 	% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 
-	\subsection{Gráfico de barras}
+	\subsection{Gráfico de barras / Scatterplot}
+
+	Se eligió usar un gráfico de barras y scatterplot para varias preguntas distintas, por que es la forma más óptima de comparar cantidades, en particular porque las comparación entre alturas
+	son intuitivamente reconocidas por la percepción humana, y las variables mostradas en scatterplot permiten encontrar clusters fácilmente (Ley de Proximidad - Gestalt).
+
+	\subsubsection{Tipo}
+	Para el tipo, como son las categorias, éstas se puede ordenar lexicográficamente para después mostrar el tipo de meteorito con mayor numero de ocurrencias.
+
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{recurrentes2.png}
+	\end{center}
+
+	\subsubsection{Año}
+	Para el año, éste se ordena en el eje X, y se compara temporalmente con el numero de meteoritos encontrados.
+
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{year2.png}
+	\end{center}
+
+	\subsubsection{Peso}
+	Para el peso, éste se ordena en el eje X para comparar la cantidad de veces que fueron contados los rangos de pesos elegidos.
+
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{masa2.png}
+	\end{center}
 
 	% 	Paleta de colores: http://paletton.com/#uid=50K0D0kS-C8tqT2FFTwQPquQols
 
